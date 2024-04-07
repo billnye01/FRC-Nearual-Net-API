@@ -46,5 +46,7 @@ private:
 	const float minStart = -1;
 	const float maxStart = 1;
 
+	int PreviusScore = 0;
+
 };
 

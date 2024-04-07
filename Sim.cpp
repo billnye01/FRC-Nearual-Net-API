@@ -62,8 +62,9 @@ void Sim::End(string Save)
 		});
 
 	for (int i = 0; i < robotCon->getScores().size(); i++) {
-		if (bestRobots[0] == robotCon->getScores()[i]) {
+		if (bestRobots[0] == robotCon->getScores()[i] && PreviusScore < bestRobots[0]) {
 			save.SaveData(brain[i], Save);
+			PreviusScore = bestRobots[0];
 		}
 	}
 

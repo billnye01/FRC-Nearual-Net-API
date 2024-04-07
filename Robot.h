@@ -11,7 +11,7 @@ class Robot
 {
 
 public:
-	Robot(Entdy* entdy, bool BlueSide);
+	Robot(Entdy entdy, bool BlueSide);
 
 	void update();
 
@@ -23,7 +23,7 @@ public:
 	void resetRobot();
 
 private:
-	Entdy* robot;
+	Entdy robot;
 	int xStartingPos;
 	int yStartingPos;
 

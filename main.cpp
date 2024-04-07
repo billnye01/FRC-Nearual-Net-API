@@ -1,10 +1,7 @@
-#include "SDL.h"
-#include "SDL_image.h"
+
 #include <iostream>
 #include <vector>
 
-#include "RenderWindow.h"
-#include "CheckSDL.h"
 #include "Entdy.h"
 #include "RobotContruller.h"
 #include <stdlib.h>     /* srand, rand */
@@ -33,17 +30,6 @@ int main(int argc, char* argv[]){
 	double ThreashouldToHit = 10;
 	int PenltyFromHitting = 100;
 
-	// init video stuff
-	CheckSDL checkSDL;
-	
-	RenderWindow window("Game", 1280, 720);
-	
-	window.SetImageOrgin("TextureFolders/Img/");
-
-	window.SetSizeMod(1.0f);
-
-	Entdy* backDrop = window.CreateEntdy(0, 0, 2.3, window.LoadTexture("FRC2024Fiald.png"));
-
 	// makes the robots
 	//RobotContruller robotContuller;
 
@@ -51,14 +37,14 @@ int main(int argc, char* argv[]){
 	RobotContruller robotContuller;
 
 	//blue
-	Robot RobotBlue1(window.CreateEntdy(RobotPosY[1], RobotPosX[0], 0.1, window.LoadTexture("BlueAllanceRobot.png")), true);
-	Robot RobotBlue2(window.CreateEntdy(RobotPosY[1], RobotPosX[1], 0.1, window.LoadTexture("BlueAllanceRobot.png")), true);
-	Robot RobotBlue3(window.CreateEntdy(RobotPosY[1], RobotPosX[2], 0.1, window.LoadTexture("BlueAllanceRobot.png")), true);
+	Robot RobotBlue1(Entdy(RobotPosY[1], RobotPosX[0], 0.1), true);
+	Robot RobotBlue2(Entdy(RobotPosY[1], RobotPosX[1], 0.1), true);
+	Robot RobotBlue3(Entdy(RobotPosY[1], RobotPosX[2], 0.1), true);
 
 	//red
-	Robot RobotRed1(window.CreateEntdy(RobotPosY[0], RobotPosX[0], 0.1, window.LoadTexture("RedAllanceRobot.png")), false);
-	Robot RobotRed2(window.CreateEntdy(RobotPosY[0], RobotPosX[1], 0.1, window.LoadTexture("RedAllanceRobot.png")), false);
-	Robot RobotRed3(window.CreateEntdy(RobotPosY[0], RobotPosX[2], 0.1, window.LoadTexture("RedAllanceRobot.png")), false);
+	Robot RobotRed1(Entdy(RobotPosY[0], RobotPosX[0], 0.1), false);
+	Robot RobotRed2(Entdy(RobotPosY[0], RobotPosX[1], 0.1), false);
+	Robot RobotRed3(Entdy(RobotPosY[0], RobotPosX[2], 0.1), false);
 
 	robotContuller.setRobot(RobotBlue1, 0);
 	robotContuller.setRobot(RobotBlue2, 1);
@@ -107,20 +93,6 @@ int main(int argc, char* argv[]){
 	bool GameRuning = true;
 
 	while (GameRuning) {
-		GameRuning = checkSDL.CheckIfGameRunning();
-		
-		//robotContuller.ModifiRobot(blue1_B.out(robotContuller.getAllRobotValues()), 0);
-		//robotContuller.ModifiRobot(brainSave.out(robotContuller.getAllRobotValues()), 1);
-		/*robotContuller.ModifiRobot(blue2_B.out(robotContuller.getAllRobotValues()), 1);
-		robotContuller.ModifiRobot(blue3_B.out(robotContuller.getAllRobotValues()), 2);
-
-		robotContuller.ModifiRobot(red1_B.out(robotContuller.getAllRobotValues()), 3);
-		robotContuller.ModifiRobot(red2_B.out(robotContuller.getAllRobotValues()), 4);
-		robotContuller.ModifiRobot(red3_B.out(robotContuller.getAllRobotValues()), 5);
-		*/
-
-		// do stuff
-		//robotContuller.UpdateAll();
 
 		for (int i = 0; i < 3; i++) {
 
@@ -135,11 +107,6 @@ int main(int argc, char* argv[]){
 				cout << cycalls << "\n\n\n";
 
 				sim.Update();
-
-				window.Clear();
-				window.renderAll();
-				window.Display();
-
 				cycalls--;
 			}
 			
@@ -148,18 +115,6 @@ int main(int argc, char* argv[]){
 		}
 
 	}
-
-	window.CleanUp();
-	SDL_Quit();
-
-	//vector<int> bestRobots = robotContuller.getScores();
-
-	//sort(bestRobots.begin(), bestRobots.end(), sortF);
-
-	/*
-	for (int i = 0; i < bestRobots.size(); i++) {
-		cout << i << " : " << bestRobots[i] << endl;
-	}*/
 
 	sim.End("C:/Users/clywh/OneDrive/Desktop/Code/C/FRC2024GameSim/BaordGame/SaveFiles/SaveTest.txt");
 	
