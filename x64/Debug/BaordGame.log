@@ -1,0 +1,30 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (BaordGame.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Robot.cpp
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\Robot.cpp(5,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\Robot.cpp(6,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\Robot.cpp(80,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\Robot.cpp(81,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Sim.cpp
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\Sim.cpp(21,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(45,45): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(54,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(54,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(54,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(55,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(55,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(55,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(56,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(56,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(56,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(59,65): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(59,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(59,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(60,65): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(60,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(60,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(61,65): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(61,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\BaordGame\main.cpp(61,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  BaordGame.vcxproj -> C:\Users\clywh\OneDrive\Desktop\Code\C\FRC2024GameSim\x64\Debug\FRC2024GameSim.exe
